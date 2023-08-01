@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>univversal calculator</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div>
+    <h1>Univversal Interest CALCULATOR</h1>
+    <form onsubmit="return false">
+    <label for="Investment">Total Investment :</label>
+    <input type="text" id="amount"> <br>
+    <label for="Years">Years : </label>
+    <input type="text" id="years"> <br>
+    <input type="submit" value="FD" onclick="fd(amount.value,years.value)" >
+    <input type="submit" value="PO" onclick="po(amount.value,years.value)"  >
+    <input type="submit" value="LIC" onclick="lic(amount.value,years.value)"  >
+    <input type="submit" value="SENSEX" onclick="sensex(amount.value,years.value)" >
+    <input type="submit" value="PPF" onclick="ppf(amount.value,years.value)"  >
+</div>
+</form>
+    <label for="output" id="demo"></label>
+    <script src="./index.js"></script>
+
+</body>
+</html>
